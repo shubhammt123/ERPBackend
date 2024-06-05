@@ -5,13 +5,16 @@ const dotenv = require("dotenv");
 const tedious = require("tedious");
 
 dotenv.config();
-
+const DATABASE = "testesdee"
+const USER = "esdee"
+const PASSWORD = "Admin@123"
+const SERVER = "esdee.database.windows.net"
 const sequelize = new Sequelize(
-  `${process.env.DATABASE}`,
-  `${process.env.USER}`,
-  `${process.env.PASSWORD}`,
+  DATABSE,
+  USER,
+  PASSWORD,
   {
-    host: `${process.env.SERVER}`,
+    host: SERVER,
     dialectModule: tedious,
     dialect: "mssql",
     dialectOptions :{
