@@ -27,7 +27,7 @@ Salesman.sync()
     console.error("Error syncing Client model:", error);
   });
 app.get("/", (req, res) => {
-  console.log("ERP Backend");
+  res.send("ERP Backend")
 });
 app.use("/api", SalesManRoute);
 // app.use("/api", userSchemaRoute);
