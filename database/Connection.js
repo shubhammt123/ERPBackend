@@ -10,7 +10,7 @@ const USER = "esdee"
 const PASSWORD = "Admin@123"
 const SERVER = "esdee.database.windows.net"
 const sequelize = new Sequelize(
-  DATABSE,
+  DATABASE,
   USER,
   PASSWORD,
   {
