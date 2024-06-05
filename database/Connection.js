@@ -8,7 +8,7 @@ dotenv.config();
 const DATABASE = "testesdee"
 const USER = "esdee"
 const PASSWORD = "Admin@123"
-const SERVER = "https://esdee.database.windows.net"
+const SERVER = "esdee.database.windows.net"
 const sequelize = new Sequelize(
   DATABASE,
   USER,
